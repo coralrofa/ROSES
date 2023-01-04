@@ -19,3 +19,6 @@ The reasoning behind this topic is to assist the firm's human resource departmen
 
 ## Questions to be answered 
 Which factors influence retention either remaining with a company, signified by 0, or leaves the company, signified by 1.
+
+## Database and Machine Learning Model
+To initiate the data analysis SQLlite will be used to create a database for analysis using Random Forest Supervised Machine Learing Model. 
