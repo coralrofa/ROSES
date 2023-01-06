@@ -1,6 +1,9 @@
 # ROSES
 
 ## Topic:
+
+Employee Future Prediction
+
 The topic of this project is to build a predictive model for determining if there is an association between expectations of an employee leaving within the next two years and a variety of predictor variables. 
 
 ## Description of the Data:
