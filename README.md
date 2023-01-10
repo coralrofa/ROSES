@@ -11,6 +11,11 @@ The dependent variable is a categorical variable of whether or not the employee 
 
 There is a total of 4,653 observations. Education level is a qualitative categorical variable consisting of three possible values: Bachelors, Masters, and Doctorate degrees. The year of joining firm variable is a continuous quantitative variable varies from 2012 to 2018. The city location of office is a qualitative categorical variable consisting of three cities: Bangalore, Pune, and New Delhi. The salary tier is a qualitative categorical variable which include three tiers: 1 for the highest, 2 for the middle, and 3 for the lowest. Age is a continuous quantitative variable ranging from 22 to 41. The gender variable is qualitative and categorical with either male or female. The qualitative categorical variable of whether or not the employee was kept out of projects for longer than one month is either yes or no. The experience length variable is continuous and quantitative and ranges from 0 to 7. The dependent variable being predicted of whether or not the employee is expected to be leaving the firm within two years is qualitative categorical variable of either 1 or 0 for yes or no.
 
+[Database Properties](df_properties.PNG)
+
+![Database Properties](Images/df_properties.PNG)
+
+
 ## Source:
 The raw data is a CSV obtained from: 
 [Data Source](https://www.kaggle.com/datasets/tejashvi14/employee-future-prediction)
@@ -23,5 +28,45 @@ The reasoning behind this topic is to assist the firm's human resource departmen
 ## Questions to be answered 
 Which factors influence retention either remaining with a company, signified by 0, or leaves the company, signified by 1.
 
-## Database and Machine Learning Model
-To initiate the data analysis SQLlite will be used to create a database for analysis using Random Forest Supervised Machine Learing Model. 
+## Data Analysis 
+
+### Database
+To initiate the data analysis SQLlite will be used to create a database for analysis.
+
+### Machine Learning Model: Balanced Random Forest Classifier 
+  * Model Background 
+    
+    How does it work?
+    
+    Why this specific model?
+    
+    What is the model's accuracy?
+    
+    If there are statistics involved, what stats are being included in analysis and why?
+    
+    If no statistics are involved, what would you include if you had more time?
+ 
+ * Overview of analysis  
+    
+    Connect to sqlite3 database
+    
+    Asses the properties of the database
+    
+    Establish columns/target and remove unwanted columns
+    
+    Check the balance of the target values
+    
+    Establish the training set and train the model
+    
+    Resample the training data
+    
+    Determine balanced accuracy score
+    
+    Calculate confusion matrix
+    
+    Calculate accuracy score
+    
+    Evaluate the imbalance classification report
+    
+    Determine the importance rating of each feature
+
