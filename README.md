@@ -31,7 +31,13 @@ Which factors influence retention either remaining with a company, signified by 
 ## Data Analysis 
 
 ### Database
-To initiate the data analysis SQLlite will be used to create a database for analysis.
+  To initiate the data analysis SQLlite will be used to create a database for analysis.
+
+### Dashboard
+  [Overview](https://public.tableau.com/views/Overview_16731458673560/OVERVIEW_1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+  [Retention](https://public.tableau.com/views/Retention_16732215158480/Retention?:language=en-US&:display_count=n&:origin=viz_share_link)
+ 
 
 ### Machine Learning Model: Balanced Random Forest Classifier 
   * Model Background 
