@@ -35,7 +35,12 @@ Which factors influence retention either remaining with a company, signified by 
 
 ### Dashboard
 
- 
+[Tableau: Overview of Database](https://public.tableau.com/views/Overview_16731458673560/OVERVIEW_1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+[Tableau: Retention Analysis](https://public.tableau.com/views/Retention_16732215158480/Retention?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+[Storyboard: Google Slides Deck](https://docs.google.com/presentation/d/1MwUGWD0oV54u0reO5Xjkq1sKSW_22-Wau55gW6GMRZY/edit?usp=sharing)
+
 
 ### Machine Learning Model: Balanced Random Forest Classifier 
   * Model Background 
