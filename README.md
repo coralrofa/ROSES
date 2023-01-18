@@ -32,11 +32,12 @@ The dependent variable is a categorical variable of whether or not the employee 
 
 There is a total of 4,653 observations. Education level is a qualitative categorical variable consisting of three possible values: Bachelors, Masters, and Doctorate degrees. The year of joining firm variable is a continuous quantitative variable varies from 2012 to 2018. The city location of office is a qualitative categorical variable consisting of three cities: Bangalore, Pune, and New Delhi. The salary tier is a qualitative categorical variable which include three tiers: 1 for the highest, 2 for the middle, and 3 for the lowest. Age is a continuous quantitative variable ranging from 22 to 41. The gender variable is qualitative and categorical with either male or female. The qualitative categorical variable of whether or not the employee was kept out of projects for longer than one month is either yes or no. The experience length variable is continuous and quantitative and ranges from 0 to 7. The dependent variable being predicted of whether or not the employee is expected to be leaving the firm within two years is qualitative categorical variable of either 1 or 0 for yes or no.
 
-[Database Properties](df_properties.PNG)
+Database Properties
 
 ![Database Properties](Images/df_properties.PNG)
 
 Population Overview
+
 ![Overview.png](Images/Overview.png)
 
 ## Database
@@ -50,6 +51,7 @@ Python pandas was used to generate SQlite3 database “employees_df.db”  from 
 Random Forest model uses multiple decision trees to process the data to arrive to a more accurate prediction of the target value from the given features. It is a highly accurate model that compensates for overfitting by using the average of all predictions and most importantly it allows determination of the features with the most influence on the target.
 
 XXXXXXX If there are statistics involved, what stats are being included in analysis and why?
+
 XXXXXXX If no statistics are involved, what would you include if you had more time?
 
 #### Overview of analysis
