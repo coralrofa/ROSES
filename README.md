@@ -42,7 +42,7 @@ Population Overview
 
 ## Database
 
-Python pandas was used to generate SQlite3 database “employees_df.db”  from the csv file “Employee.csv". The csv file was read into the DataFrame  “employees” with an added index to serve as primary key. The employees dataframe was used to generate two independent tables. One table called “Predicated” containing the target variable ‘LeaveOrNot’ and a reference index. . The second table called “Features”  containing the variables 'Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', ‘ExperienceInCurrentDomain’ and a reference index. These tables were joined using SQlite3 into the table “Employees”, and loaded into the dataframe “employee-data_df”.  the reference index removed using the code  employee_data_df = df.drop(['EmployeeIndex:1', 'EmployeeIndex'], axis=1). The table contained no null values. 
+Python Pandas was used to generate SQlite3 database “employees_df.db”  from the csv file “Employee.csv". First, the csv file was read into the DataFrame  “EmployeeIndex” with an added index to serve as primary key. The employees dataframe was used to generate two independent tables. One table called “Predicated” containing the target variable ‘LeaveOrNot’ and the reference index. . The second table called “Features”  containing the variables 'Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', ‘ExperienceInCurrentDomain’ and the reference index. These tables were joined using SQlite3 into the table “Employees”, and loaded into the dataframe “employee_data_df”. Then the reference index was removed. The table contained no null values. 
 
 ### Machine Learning Model: Balanced Random Forest Classifier 
 
