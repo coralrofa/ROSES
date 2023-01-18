@@ -46,11 +46,11 @@ Python Pandas was used to generate SQlite3 database “employees_df.db”  from 
 
 Random Forest model uses multiple decision trees to process the data to arrive to a more accurate prediction of the target value from a random subset of the given features. This is done with the Python Scikit-Learn library. It is a highly accurate model that compensates for overfitting by using the average of all predictions and most importantly it allows determination of the features with the most influence on the target.
 
-#### Overview of analysis
+#### Overview of Analysis
 
 First we had connected to SQlite3 database. Then there was an assesesment of the properties of the database to determine the size and integrity of the database. there were no null values identified. 
 
-The next step was to establish columns/target and remove unwanted column of reference index. The variables within the dataframe “employee_data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values.  Afterwards, there was a check of the balance of the target values. Then, we had established the training and testing sets and trained the model with Scikit-Learn. Next, there was a resampling of the training data. Finally we had determined the balanced accuracy score and calculate confusion matrix. The training data was then resampled using the BalancedRandomForestClassifier and the balance accuracy score and confusion matrix were calculated.
+The next step was to establish the features and target and remove unwanted column of reference index. The variables within the dataframe “employee_data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values.  Afterwards, there was a check of the balance of the target values. Then, we had established the training and testing sets and trained the model with Scikit-Learn. Next, there was a resampling of the training data. Finally we had determined the balanced accuracy score and calculate confusion matrix. The training data was then resampled using the BalancedRandomForestClassifier and the balance accuracy score and confusion matrix were calculated.
 
 Accuracy Score
 
