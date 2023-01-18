@@ -1,9 +1,5 @@
 # ROSES
 
-## Communication Protocols
-
-Communication takes place mostly through Slack and class hours. 
-
 ## Topic:  Employee Retention Prediction
 
 The topic of this project is to build a predictive model for determining if there is an association between expectations of an employee leaving within the next two years and a variety of predictor variables. It was identified that the features 'Joining Year' (0.31) and ‘Age’ (0.19) are the main determinants of retention. 
