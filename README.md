@@ -44,19 +44,13 @@ Python Pandas was used to generate SQlite3 database “employees_df.db”  from 
 
 ####  Model Background 
 
-Random Forest model uses multiple decision trees to process the data to arrive to a more accurate prediction of the target value from the given features. It is a highly accurate model that compensates for overfitting by using the average of all predictions and most importantly it allows determination of the features with the most influence on the target.
-
-XXXXXXX If there are statistics involved, what stats are being included in analysis and why?
-
-XXXXXXX If no statistics are involved, what would you include if you had more time?
+Random Forest model uses multiple decision trees to process the data to arrive to a more accurate prediction of the target value from a random subset of the given features. This is done with the Python Scikit-Learn library. It is a highly accurate model that compensates for overfitting by using the average of all predictions and most importantly it allows determination of the features with the most influence on the target.
 
 #### Overview of analysis
 
-Connect to sqlite3 database via pd.read_sql_query
+First we had connected to SQlite3 database. Then there was an assesesment of the properties of the database to determine the size and integrity of the database. there were no null values identified. 
 
-Asses the properties of the database  to determine the size and integrity of the database. there were no null values identified. 
-
-Establish columns/target  and remove unwanted columns: The variables within the dataframe “employee-data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values using the code pd.get_dummies.  
+The next step was to establish columns/target and remove unwanted columns: The variables within the dataframe “employee-data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values.  
 
 Check the balance of the target values
 
