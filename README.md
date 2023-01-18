@@ -50,15 +50,7 @@ Random Forest model uses multiple decision trees to process the data to arrive t
 
 First we had connected to SQlite3 database. Then there was an assesesment of the properties of the database to determine the size and integrity of the database. there were no null values identified. 
 
-The next step was to establish columns/target and remove unwanted columns: The variables within the dataframe “employee-data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values.  
-
-Check the balance of the target values
-
-Establish the training set and train the model: and split into test/training sets using sklearn.model_selection import train_test_split.  
-
-Resample the training data
-
-Determine balanced accuracy score and calculate confusion matrix: The training data was then resampled using the BalancedRandomForestClassifier and the balance accuracy score and confusion matrix were calculated.
+The next step was to establish columns/target and remove unwanted column of reference index. The variables within the dataframe “employee_data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values.  Afterwards, there was a check of the balance of the target values. Then, we had established the training and testing sets and trained the model with Scikit-Learn. Next, there was a resampling of the training data. Finally we had determined the balanced accuracy score and calculate confusion matrix. The training data was then resampled using the BalancedRandomForestClassifier and the balance accuracy score and confusion matrix were calculated.
 
 Accuracy Score
 
@@ -93,4 +85,4 @@ Feature importance
 
 ## Hindsight 20/20
 
-More robust database
+A larger sample size could have been useful an even more accurate estimator of the coefficients of the predictor variables in determining the predicted variable.
