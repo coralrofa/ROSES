@@ -82,7 +82,7 @@ Evaluate the imbalance classification report
 
 Classification report
 
-![imbalanced_classification_report.PNG ](Images/imbalanced_classification_report.PNG
+![imbalanced_classification_report.PNG](Images/imbalanced_classification_report.PNG)
 
 Determine the importance rating of each feature
 
