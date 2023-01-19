@@ -1,9 +1,5 @@
 # ROSES
 
-## Communication Protocols
-
-Communication takes place mostly through Slack and class hours. 
-
 ## Topic:  Employee Retention Prediction
 
 The topic of this project is to build a predictive model for determining if there is an association between expectations of an employee leaving within the next two years and a variety of predictor variables. It was identified that the features 'Joining Year' (0.31) and ‘Age’ (0.19) are the main determinants of retention. 
@@ -42,33 +38,19 @@ Population Overview
 
 ## Database
 
-Python pandas was used to generate SQlite3 database “employees_df.db”  from the csv file “Employee.csv". The csv file was read into the DataFrame  “employees” with an added index to serve as primary key. The employees dataframe was used to generate two independent tables. One table called “Predicated” containing the target variable ‘LeaveOrNot’ and a reference index. . The second table called “Features”  containing the variables 'Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', ‘ExperienceInCurrentDomain’ and a reference index. These tables were joined using SQlite3 into the table “Employees”, and loaded into the dataframe “employee-data_df”.  the reference index removed using the code  employee_data_df = df.drop(['EmployeeIndex:1', 'EmployeeIndex'], axis=1). The table contained no null values. 
+Python Pandas was used to generate SQlite3 database “employees_df.db”  from the csv file “Employee.csv". First, the csv file was read into the DataFrame  “EmployeeIndex” with an added index to serve as primary key. The employees dataframe was used to generate two independent tables. One table called “Predicated” containing the target variable ‘LeaveOrNot’ and the reference index. . The second table called “Features”  containing the variables 'Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', ‘ExperienceInCurrentDomain’ and the reference index. These tables were joined using SQlite3 into the table “Employees”, and loaded into the dataframe “employee_data_df”. Then the reference index was removed. The table contained no null values. 
 
 ### Machine Learning Model: Balanced Random Forest Classifier 
 
 ####  Model Background 
 
-Random Forest model uses multiple decision trees to process the data to arrive to a more accurate prediction of the target value from the given features. It is a highly accurate model that compensates for overfitting by using the average of all predictions and most importantly it allows determination of the features with the most influence on the target.
+Random Forest model uses multiple decision trees to process the data to arrive to a more accurate prediction of the target value from a random subset of the given features. This is done with the Python Scikit-Learn library. It is a highly accurate model that compensates for overfitting by using the average of all predictions and most importantly it allows determination of the features with the most influence on the target.
 
-XXXXXXX If there are statistics involved, what stats are being included in analysis and why?
+#### Overview of Analysis
 
-XXXXXXX If no statistics are involved, what would you include if you had more time?
+First we had connected to SQlite3 database. Then there was an assesesment of the properties of the database to determine the size and integrity of the database. there were no null values identified. 
 
-#### Overview of analysis
-
-Connect to sqlite3 database via pd.read_sql_query
-
-Asses the properties of the database  to determine the size and integrity of the database. there were no null values identified. 
-
-Establish columns/target  and remove unwanted columns: The variables within the dataframe “employee-data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values using the code pd.get_dummies.  
-
-Check the balance of the target values
-
-Establish the training set and train the model: and split into test/training sets using sklearn.model_selection import train_test_split.  
-
-Resample the training data
-
-Determine balanced accuracy score and calculate confusion matrix: The training data was then resampled using the BalancedRandomForestClassifier and the balance accuracy score and confusion matrix were calculated.
+The next step was to establish the features and target and remove unwanted column of reference index. The variables within the dataframe “employee_data_df” were subsequently split into dependent variables (features) and labels (target). Then, string values were converted into numerical values.  Afterwards, there was a check of the balance of the target values. Then, we had established the training and testing sets and trained the model with Scikit-Learn. Next, there was a resampling of the training data. Finally we had determined the balanced accuracy score and calculate confusion matrix. The training data was then resampled using the BalancedRandomForestClassifier and the balance accuracy score and confusion matrix were calculated.
 
 Accuracy Score
 
@@ -103,6 +85,4 @@ Feature importance
 
 ## Hindsight 20/20
 
-More robust database
-
-
+A larger sample size could have been useful an even more accurate estimator of the coefficients of the predictor variables in determining the predicted variable.
